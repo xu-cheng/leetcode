@@ -35,9 +35,7 @@ impl Solution2 {
         for (i, n) in a.iter().enumerate().rev() {
             while !stack.is_empty() && a[stack[stack.len() - 1]] <= *n {
                 let x = stack.pop().unwrap();
-                if i > x {
-                    ans = cmp::max(ans, (i - x) as i32);
-                }
+                ans = cmp::max(ans, (i - x) as i32);
             }
         }
 
@@ -57,6 +55,7 @@ mod tests {
             Solution1::max_width_ramp(vec![9, 8, 1, 0, 1, 9, 4, 0, 4, 1]),
             7
         );
+        assert_eq!(Solution1::max_width_ramp(vec![3, 2, 1]), 0);
     }
 
     #[bench]
@@ -71,6 +70,7 @@ mod tests {
             Solution2::max_width_ramp(vec![9, 8, 1, 0, 1, 9, 4, 0, 4, 1]),
             7
         );
+        assert_eq!(Solution2::max_width_ramp(vec![3, 2, 1]), 0);
     }
 
     #[bench]
