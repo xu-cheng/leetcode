@@ -15,7 +15,8 @@ impl Solution {
                 match c {
                     '0'..='9' => {
                         let (tmp1, flag1) = ans.overflowing_mul(10);
-                        let (tmp2, flag2) = tmp1.overflowing_add(c as i32 - '0' as i32);
+                        let (tmp2, flag2) =
+                            tmp1.overflowing_add(c as i32 - '0' as i32);
                         if flag1 || flag2 {
                             return if neg {
                                 i32::min_value()

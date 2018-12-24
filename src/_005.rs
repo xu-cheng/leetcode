@@ -12,7 +12,10 @@ impl Solution1 {
             let mut i: usize;
             // search palindrome s[mid-i..=mid+i]
             i = 1;
-            while mid >= i && mid + i < len && s_bytes[mid - i] == s_bytes[mid + i] {
+            while mid >= i
+                && mid + i < len
+                && s_bytes[mid - i] == s_bytes[mid + i]
+            {
                 i += 1;
             }
             i -= 1;
@@ -21,7 +24,10 @@ impl Solution1 {
             }
             // search palindrome s[mid-i..=mid+i+1]
             i = 0;
-            while mid >= i && mid + i + 1 < len && s_bytes[mid - i] == s_bytes[mid + i + 1] {
+            while mid >= i
+                && mid + i + 1 < len
+                && s_bytes[mid - i] == s_bytes[mid + i + 1]
+            {
                 i += 1;
             }
             if i > 0 && ans.len() < 2 * i {
@@ -96,7 +102,11 @@ mod tests {
 
     #[bench]
     fn bench_solution1(b: &mut Bencher) {
-        b.iter(|| Solution1::longest_palindrome("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".to_string()));
+        b.iter(|| {
+            Solution1::longest_palindrome(
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".to_string(),
+            )
+        });
     }
 
     #[test]
@@ -111,6 +121,10 @@ mod tests {
 
     #[bench]
     fn bench_solution2(b: &mut Bencher) {
-        b.iter(|| Solution2::longest_palindrome("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".to_string()));
+        b.iter(|| {
+            Solution2::longest_palindrome(
+                "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa".to_string(),
+            )
+        });
     }
 }

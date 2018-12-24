@@ -27,7 +27,8 @@ impl Solution {
         while l1p.is_some() || l2p.is_some() {
             let l1n = l1p.map(|b| b.as_ref());
             let l2n = l2p.map(|b| b.as_ref());
-            let value = l1n.map_or(0, |n| n.val) + l2n.map_or(0, |n| n.val) + carry;
+            let value =
+                l1n.map_or(0, |n| n.val) + l2n.map_or(0, |n| n.val) + carry;
             carry = value / 10;
             cur.next = Some(Box::new(ListNode::new(value % 10)));
             cur = cur.next.as_mut().unwrap();

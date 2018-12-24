@@ -16,7 +16,8 @@ impl Solution {
                 neg = (x - cur) * 2;
             } else {
                 let pos_tmp = cmp::min(cur * k + pos, (cur + 1) * k + neg);
-                let neg_tmp = cmp::min((x - cur) * k + pos, (x - cur - 1) * k + neg);
+                let neg_tmp =
+                    cmp::min((x - cur) * k + pos, (x - cur - 1) * k + neg);
                 pos = pos_tmp;
                 neg = neg_tmp;
             }

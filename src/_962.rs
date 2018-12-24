@@ -60,7 +60,9 @@ mod tests {
 
     #[bench]
     fn bench_solution1(b: &mut Bencher) {
-        b.iter(|| Solution1::max_width_ramp(vec![9, 8, 1, 0, 1, 9, 4, 0, 4, 1]));
+        b.iter(|| {
+            Solution1::max_width_ramp(vec![9, 8, 1, 0, 1, 9, 4, 0, 4, 1])
+        });
     }
 
     #[test]
@@ -75,6 +77,8 @@ mod tests {
 
     #[bench]
     fn bench_solution2(b: &mut Bencher) {
-        b.iter(|| Solution2::max_width_ramp(vec![9, 8, 1, 0, 1, 9, 4, 0, 4, 1]));
+        b.iter(|| {
+            Solution2::max_width_ramp(vec![9, 8, 1, 0, 1, 9, 4, 0, 4, 1])
+        });
     }
 }

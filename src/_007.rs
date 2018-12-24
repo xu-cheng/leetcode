@@ -6,11 +6,8 @@ impl Solution {
         let mut ans: i32 = 0;
         while num > 0 {
             let (tmp1, flag1) = ans.overflowing_mul(10);
-            if flag1 {
-                return 0;
-            }
             let (tmp2, flag2) = tmp1.overflowing_add(num % 10);
-            if flag2 {
+            if flag1 || flag2 {
                 return 0;
             }
             ans = tmp2;

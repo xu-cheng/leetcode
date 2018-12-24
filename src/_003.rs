@@ -40,6 +40,9 @@ mod tests {
             Solution::length_of_longest_substring("pwwkew".to_string()),
             3
         );
-        assert_eq!(Solution::length_of_longest_substring("abba".to_string()), 2);
+        assert_eq!(
+            Solution::length_of_longest_substring("abba".to_string()),
+            2
+        );
     }
 }
