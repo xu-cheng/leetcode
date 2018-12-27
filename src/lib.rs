@@ -10,6 +10,7 @@ pub mod _006; // ZigZag Conversion
 pub mod _007; // Reverse Integer
 pub mod _008; // String to Integer (atoi)
 pub mod _009; // Palindrome Number
+pub mod _010; // Regular Expression Matching
 
 pub mod _961; // N-Repeated Element in Size 2N Array
 pub mod _962; // Maximum Width Ramp
