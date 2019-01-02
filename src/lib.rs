@@ -16,3 +16,4 @@ pub mod _961; // N-Repeated Element in Size 2N Array
 pub mod _962; // Maximum Width Ramp
 pub mod _963; // Minimum Area Rectangle II
 pub mod _964; // Least Operators to Express Number
+pub mod _965; // Univalued Binary Tree
