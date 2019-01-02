@@ -17,4 +17,5 @@ pub mod _962; // Maximum Width Ramp
 pub mod _963; // Minimum Area Rectangle II
 pub mod _964; // Least Operators to Express Number
 pub mod _965; // Univalued Binary Tree
+pub mod _966; // Vowel Spellchecker
 pub mod _967; // Numbers With Same Consecutive Differences
