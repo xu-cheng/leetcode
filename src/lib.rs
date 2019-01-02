@@ -19,3 +19,4 @@ pub mod _964; // Least Operators to Express Number
 pub mod _965; // Univalued Binary Tree
 pub mod _966; // Vowel Spellchecker
 pub mod _967; // Numbers With Same Consecutive Differences
+pub mod _968; // Binary Tree Cameras
