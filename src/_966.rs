@@ -17,7 +17,7 @@ impl Solution {
             HashMap::with_capacity(wordlist.len());
         for w in wordlist {
             let c = w.to_lowercase();
-            cap.entry(c.clone()).or_insert(w.clone());
+            cap.entry(c.clone()).or_insert_with(|| w.clone());
             let v = c
                 .chars()
                 .map(|x| match x {
@@ -25,7 +25,7 @@ impl Solution {
                     _ => x,
                 })
                 .collect();
-            vow.entry(v).or_insert(w.clone());
+            vow.entry(v).or_insert_with(|| w.clone());
         }
         let mut ans: Vec<String> = Vec::with_capacity(queries.len());
         for q in queries {

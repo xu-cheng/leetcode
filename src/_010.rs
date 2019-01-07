@@ -12,9 +12,9 @@ impl Solution {
         for i in (0..=s_len).rev() {
             for j in (0..p_len).rev() {
                 let first_match = i < s_len
-                    && (p_bytes[j] == s_bytes[i] || p_bytes[j] == '.' as u8);
+                    && (p_bytes[j] == s_bytes[i] || p_bytes[j] == b'.');
                 mem[i * (p_len + 1) + j] =
-                    if j + 1 < p_len && p_bytes[j + 1] == '*' as u8 {
+                    if j + 1 < p_len && p_bytes[j + 1] == b'*' {
                         mem[i * (p_len + 1) + j + 2]
                             || (first_match && mem[(i + 1) * (p_len + 1) + j])
                     } else {

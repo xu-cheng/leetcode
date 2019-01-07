@@ -30,7 +30,7 @@ impl Solution {
                     let x1 = (p1[0] - p2[0]).pow(2) + (p1[1] - p2[1]).pow(2);
                     let x2 = (p1[0] + p2[0] - center[0]).pow(2)
                         + (p1[1] + p2[1] - center[1]).pow(2);
-                    let area = (x1 as f64).sqrt() * (x2 as f64).sqrt();
+                    let area = f64::from(x1).sqrt() * f64::from(x2).sqrt();
                     ans = Some(match ans {
                         Some(value) => {
                             if area > value {
