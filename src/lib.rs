@@ -27,3 +27,4 @@ pub mod _966; // Vowel Spellchecker
 pub mod _967; // Numbers With Same Consecutive Differences
 pub mod _968; // Binary Tree Cameras
 pub mod _970; // Powerful Integers
+pub mod _972; // Equal Rational Numbers
