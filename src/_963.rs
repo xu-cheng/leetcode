@@ -52,10 +52,7 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-
-    fn assert_float_approx(a: f64, b: f64) {
-        assert!((a - b).abs() < 1e-5);
-    }
+    use crate::helper::*;
 
     #[test]
     fn test_solution() {

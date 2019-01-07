@@ -1,6 +1,9 @@
 #![feature(test)]
 extern crate test;
 
+#[cfg(test)]
+mod helper;
+
 pub mod _001; // Two Sum
 pub mod _002; // Add Two Numbers
 pub mod _003; // Longest Substring Without Repeating Characters

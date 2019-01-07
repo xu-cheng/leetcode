@@ -23,12 +23,7 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-
-    fn assert_unsort_eq(mut a: Vec<i32>, mut b: Vec<i32>) {
-        a.sort();
-        b.sort();
-        assert_eq!(a, b);
-    }
+    use crate::helper::*;
 
     #[test]
     fn test_solution() {

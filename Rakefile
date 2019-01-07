@@ -57,6 +57,7 @@ task :new do
     #[cfg(test)]
     mod tests {
         use super::*;
+        use crate::helper::*;
 
         #[test]
         fn test_solution() {
