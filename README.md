@@ -1,7 +1,13 @@
-# leetcode-rs
+# leetcode
 
 My leetcode solutions implemented in [Rust](https://rust-lang.org).
 
-Simply run `cargo +nightly test <question_num>` to test the specific question.
-If there are multiple solutions, run `cargo +nightly bench <question_num>` to benchmark for different solutions.
+To test the specific question, run the following command.
+```
+cargo +nightly test <question_num>
+```
 
+If there are multiple solutions, run the following command to benchmark for different solutions.
+```
+cargo +nightly bench <question_num>
+```
