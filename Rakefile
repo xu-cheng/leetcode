@@ -18,6 +18,11 @@ task :bench, [:question] do |_task, args|
   sh "cargo", "+nightly", "bench", *[args[:question]].compact
 end
 
+desc "fmt the code"
+task :fmt do
+  sh "cargo", "+nightly", "fmt"
+end
+
 desc "generate answer template"
 task :new do
   question = nil

@@ -3,5 +3,6 @@ name = "leetcode-rs"
 version = "0.1.0"
 authors = ["Xu Cheng <git@xuc.me>"]
 edition = "2018"
+publish = false
 
 [dependencies]
