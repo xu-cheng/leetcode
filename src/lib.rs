@@ -14,6 +14,7 @@ pub mod _007; // Reverse Integer
 pub mod _008; // String to Integer (atoi)
 pub mod _009; // Palindrome Number
 pub mod _010; // Regular Expression Matching
+pub mod _034; // Find First and Last Position of Element in Sorted Array
 pub mod _171; // Excel Sheet Column Number
 pub mod _260; // Single Number III
 pub mod _347; // Top K Frequent Elements
