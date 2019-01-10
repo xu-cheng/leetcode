@@ -1,4 +1,10 @@
+#![macro_use]
+
 use std::fmt::Debug;
+
+macro_rules! str_vec {
+    ($($x:expr), *) => (vec![$($x.to_string(),)*])
+}
 
 pub fn assert_float_approx(a: f64, b: f64) {
     assert!((a - b).abs() < 1e-5);

@@ -59,10 +59,6 @@ impl Solution {
 mod tests {
     use super::*;
 
-    macro_rules! str_vec {
-        ($($x : expr), *) => (vec![$($x.to_string(),)*])
-    }
-
     #[test]
     fn test_solution() {
         assert_eq!(
