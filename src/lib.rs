@@ -34,3 +34,4 @@ pub mod _970; // Powerful Integers
 pub mod _971; // Flip Binary Tree To Match Preorder Traversal
 pub mod _972; // Equal Rational Numbers
 pub mod _973; // K Closest Points to Origin
+pub mod _976; // Largest Perimeter Triangle
