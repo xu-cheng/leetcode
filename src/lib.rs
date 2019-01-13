@@ -33,3 +33,4 @@ pub mod _969; // Pancake Sorting
 pub mod _970; // Powerful Integers
 pub mod _971; // Flip Binary Tree To Match Preorder Traversal
 pub mod _972; // Equal Rational Numbers
+pub mod _973; // K Closest Points to Origin
