@@ -51,16 +51,17 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::helper::*;
 
     #[test]
     fn test_find_median_sorted_arrays() {
-        assert_eq!(
+        assert_float_approx(
             Solution::find_median_sorted_arrays(vec![1, 3], vec![2]),
-            2.0
+            2.0,
         );
-        assert_eq!(
+        assert_float_approx(
             Solution::find_median_sorted_arrays(vec![1, 2], vec![3, 4]),
-            2.5
+            2.5,
         );
     }
 }
