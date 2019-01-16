@@ -5,22 +5,22 @@ task default: :build
 
 desc "build"
 task :build do
-  sh "cargo", "+nightly", "build"
+  sh "cargo", "build"
 end
 
 desc "test <question>"
 task :test, [:question] do |_task, args|
-  sh "cargo", "+nightly", "test", *[args[:question]].compact
+  sh "cargo", "test", *[args[:question]].compact
 end
 
 desc "bench <question>"
 task :bench, [:question] do |_task, args|
-  sh "cargo", "+nightly", "bench", *[args[:question]].compact
+  sh "cargo", "bench", *[args[:question]].compact
 end
 
 desc "fmt the code"
 task :fmt do
-  sh "cargo", "+nightly", "fmt"
+  sh "cargo", "fmt"
 end
 
 desc "generate answer template"
