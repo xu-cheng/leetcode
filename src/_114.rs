@@ -23,7 +23,7 @@ pub struct Solution;
 
 impl Solution {
     pub fn flatten(root: &mut Option<Rc<RefCell<TreeNode>>>) {
-        let mut cur = root.as_mut().map(|n| n.clone());
+        let mut cur = root.as_mut().cloned();
 
         while let Some(cur_node) = cur {
             let mut cur_n = cur_node.borrow_mut();
@@ -31,7 +31,7 @@ impl Solution {
                 let mut left_n = left_node.clone();
                 loop {
                     let node =
-                        left_n.borrow_mut().right.as_mut().map(|n| n.clone());
+                        left_n.borrow_mut().right.as_mut().cloned();
                     match node {
                         Some(n) => left_n = n,
                         None => break,
@@ -40,7 +40,7 @@ impl Solution {
                 left_n.borrow_mut().right = cur_n.right.take();
                 cur_n.right = cur_n.left.take();
             }
-            cur = cur_n.right.as_mut().map(|n| n.clone());
+            cur = cur_n.right.as_mut().cloned();
         }
     }
 }

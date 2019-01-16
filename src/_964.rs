@@ -35,7 +35,7 @@ mod tests {
     fn test_solution() {
         assert_eq!(Solution::least_ops_express_target(3, 19), 5);
         assert_eq!(Solution::least_ops_express_target(5, 501), 8);
-        assert_eq!(Solution::least_ops_express_target(100, 100000000), 3);
+        assert_eq!(Solution::least_ops_express_target(100, 100_000_000), 3);
         assert_eq!(Solution::least_ops_express_target(3, 929), 19);
     }
 }

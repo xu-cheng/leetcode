@@ -93,7 +93,7 @@ mod tests {
     #[test]
     fn test_solution1() {
         let ans1 = Solution1::longest_palindrome("babad".to_string());
-        assert!(ans1 == "bab".to_string() || ans1 == "aba".to_string());
+        assert!(ans1 == "bab" || ans1 == "aba");
         assert_eq!(
             Solution1::longest_palindrome("cbbd".to_string()),
             "bb".to_string()
@@ -112,7 +112,7 @@ mod tests {
     #[test]
     fn test_solution2() {
         let ans1 = Solution2::longest_palindrome("babad".to_string());
-        assert!(ans1 == "bab".to_string() || ans1 == "aba".to_string());
+        assert!(ans1 == "bab" || ans1 == "aba");
         assert_eq!(
             Solution2::longest_palindrome("cbbd".to_string()),
             "bb".to_string()

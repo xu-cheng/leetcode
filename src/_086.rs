@@ -96,8 +96,8 @@ mod tests {
     #[test]
     fn test_solution() {
         assert_eq!(
-            Solution::partition(make_list(&vec![1, 4, 3, 2, 5, 2]), 3),
-            make_list(&vec![1, 2, 2, 4, 3, 5])
+            Solution::partition(make_list(&[1, 4, 3, 2, 5, 2]), 3),
+            make_list(&[1, 2, 2, 4, 3, 5])
         );
     }
 }

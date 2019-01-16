@@ -29,6 +29,6 @@ mod tests {
         assert_eq!(Solution::reverse(123), 321);
         assert_eq!(Solution::reverse(-123), -321);
         assert_eq!(Solution::reverse(120), 21);
-        assert_eq!(Solution::reverse(1534236469), 0);
+        assert_eq!(Solution::reverse(1_534_236_469), 0);
     }
 }
