@@ -39,3 +39,4 @@ pub mod _973; // K Closest Points to Origin
 pub mod _974; // Subarray Sums Divisible by K
 pub mod _975; // Odd Even Jump
 pub mod _976; // Largest Perimeter Triangle
+pub mod _977; // Squares of a Sorted Array
