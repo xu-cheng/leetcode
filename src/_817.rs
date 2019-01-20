@@ -32,11 +32,9 @@ impl Solution {
                 if !inside_g {
                     inside_components = false;
                 }
-            } else {
-                if inside_g {
-                    inside_components = true;
-                    ans += 1;
-                }
+            } else if inside_g {
+                inside_components = true;
+                ans += 1;
             }
         }
         ans
@@ -62,14 +60,14 @@ mod tests {
     fn test_solution() {
         assert_eq!(
             Solution::num_components(
-                make_list(&vec![0, 1, 2, 3]),
+                make_list(&[0, 1, 2, 3]),
                 vec![0, 1, 3]
             ),
             2
         );
         assert_eq!(
             Solution::num_components(
-                make_list(&vec![0, 1, 2, 3, 4]),
+                make_list(&[0, 1, 2, 3, 4]),
                 vec![0, 3, 1, 4]
             ),
             2
