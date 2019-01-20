@@ -40,3 +40,4 @@ pub mod _974; // Subarray Sums Divisible by K
 pub mod _975; // Odd Even Jump
 pub mod _976; // Largest Perimeter Triangle
 pub mod _977; // Squares of a Sorted Array
+pub mod _978; // Longest Turbulent Subarray
