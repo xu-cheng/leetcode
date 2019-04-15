@@ -22,6 +22,7 @@ pub mod _260; // Single Number III
 pub mod _347; // Top K Frequent Elements
 pub mod _500; // Keyboard Row
 pub mod _817; // Linked List Components
+pub mod _859; // Buddy Strings
 pub mod _872; // Leaf-Similar Trees
 pub mod _961; // N-Repeated Element in Size 2N Array
 pub mod _962; // Maximum Width Ramp
