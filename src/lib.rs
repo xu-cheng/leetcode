@@ -15,6 +15,7 @@ pub mod _008; // String to Integer (atoi)
 pub mod _009; // Palindrome Number
 pub mod _010; // Regular Expression Matching
 pub mod _011; // Container With Most Water
+pub mod _012; // Integer to Roman
 pub mod _034; // Find First and Last Position of Element in Sorted Array
 pub mod _086; // Partition List
 pub mod _114; // Flatten Binary Tree to Linked List
