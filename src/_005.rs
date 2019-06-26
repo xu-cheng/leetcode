@@ -40,6 +40,7 @@ impl Solution1 {
 }
 
 impl Solution2 {
+    #[allow(clippy::many_single_char_names)]
     pub fn longest_palindrome(s: String) -> String {
         let t = Self::preprocess(&s);
         let mut p = vec![0; t.len()];
