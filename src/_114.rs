@@ -30,8 +30,7 @@ impl Solution {
             if let Some(left_node) = cur_n.left.as_mut() {
                 let mut left_n = left_node.clone();
                 loop {
-                    let node =
-                        left_n.borrow_mut().right.as_mut().cloned();
+                    let node = left_n.borrow_mut().right.as_mut().cloned();
                     match node {
                         Some(n) => left_n = n,
                         None => break,

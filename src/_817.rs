@@ -59,10 +59,7 @@ mod tests {
     #[test]
     fn test_solution() {
         assert_eq!(
-            Solution::num_components(
-                make_list(&[0, 1, 2, 3]),
-                vec![0, 1, 3]
-            ),
+            Solution::num_components(make_list(&[0, 1, 2, 3]), vec![0, 1, 3]),
             2
         );
         assert_eq!(
