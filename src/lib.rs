@@ -18,6 +18,7 @@ pub mod _011; // Container With Most Water
 pub mod _012; // Integer to Roman
 pub mod _013; // Roman to Integer
 pub mod _014; // Longest Common Prefix
+pub mod _015; // 3Sum
 pub mod _034; // Find First and Last Position of Element in Sorted Array
 pub mod _086; // Partition List
 pub mod _114; // Flatten Binary Tree to Linked List
