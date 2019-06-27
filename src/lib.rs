@@ -25,6 +25,7 @@ pub mod _114; // Flatten Binary Tree to Linked List
 pub mod _171; // Excel Sheet Column Number
 pub mod _260; // Single Number III
 pub mod _347; // Top K Frequent Elements
+pub mod _459; // Repeated Substring Pattern
 pub mod _500; // Keyboard Row
 pub mod _817; // Linked List Components
 pub mod _856; // Score of Parentheses
