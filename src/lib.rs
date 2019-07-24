@@ -28,6 +28,7 @@ pub mod _260; // Single Number III
 pub mod _347; // Top K Frequent Elements
 pub mod _459; // Repeated Substring Pattern
 pub mod _500; // Keyboard Row
+pub mod _676; // Implement Magic Dictionary
 pub mod _817; // Linked List Components
 pub mod _856; // Score of Parentheses
 pub mod _859; // Buddy Strings
