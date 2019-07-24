@@ -2,39 +2,42 @@ pub struct Solution;
 
 impl Solution {
     pub fn roman_to_int(s: String) -> i32 {
-        let next_char_iter =
-            s.chars().skip(1).map(Some).chain(std::iter::once(None));
-        s.chars()
-            .zip(next_char_iter)
-            .map(|(c, next_c)| match c {
+        let mut iter = s.chars().peekable();
+        let mut ans: i32 = 0;
+        while let Some(c) = iter.next() {
+            ans += match c {
                 'M' => 1000,
                 'D' => 500,
                 'L' => 50,
                 'V' => 5,
                 'C' => {
-                    if next_c == Some('M') || next_c == Some('D') {
+                    let next_c = iter.peek();
+                    if next_c == Some(&&'M') || next_c == Some(&&'D') {
                         -100
                     } else {
                         100
                     }
                 }
                 'X' => {
-                    if next_c == Some('C') || next_c == Some('L') {
+                    let next_c = iter.peek();
+                    if next_c == Some(&&'C') || next_c == Some(&&'L') {
                         -10
                     } else {
                         10
                     }
                 }
                 'I' => {
-                    if next_c == Some('X') || next_c == Some('V') {
+                    let next_c = iter.peek();
+                    if next_c == Some(&&'X') || next_c == Some(&&'V') {
                         -1
                     } else {
                         1
                     }
                 }
                 _ => unreachable!(),
-            })
-            .sum()
+            };
+        }
+        ans
     }
 }
 
