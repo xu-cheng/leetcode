@@ -25,6 +25,7 @@ pub mod _114; // Flatten Binary Tree to Linked List
 pub mod _171; // Excel Sheet Column Number
 pub mod _208; // Implement Trie (Prefix Tree)
 pub mod _225; // Implement Stack using Queues
+pub mod _232; // Implement Queue using Stacks
 pub mod _260; // Single Number III
 pub mod _347; // Top K Frequent Elements
 pub mod _459; // Repeated Substring Pattern
