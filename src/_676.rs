@@ -32,6 +32,7 @@ impl Trie {
     }
 }
 
+#[derive(Default)]
 pub struct MagicDictionary {
     trie: Trie,
 }
