@@ -46,6 +46,8 @@ impl Solution2 {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[cfg(nightly)]
     use test::Bencher;
 
     #[test]
@@ -58,6 +60,7 @@ mod tests {
         assert_eq!(Solution1::max_width_ramp(vec![3, 2, 1]), 0);
     }
 
+    #[cfg(nightly)]
     #[bench]
     fn bench_solution1(b: &mut Bencher) {
         b.iter(|| {
@@ -75,6 +78,7 @@ mod tests {
         assert_eq!(Solution2::max_width_ramp(vec![3, 2, 1]), 0);
     }
 
+    #[cfg(nightly)]
     #[bench]
     fn bench_solution2(b: &mut Bencher) {
         b.iter(|| {

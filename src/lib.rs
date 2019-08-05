@@ -1,4 +1,6 @@
-#![feature(test)]
+#![cfg_attr(nightly, feature(test))]
+
+#[cfg(all(nightly, test))]
 extern crate test;
 
 #[cfg(test)]

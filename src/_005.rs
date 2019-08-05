@@ -89,6 +89,8 @@ impl Solution2 {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[cfg(nightly)]
     use test::Bencher;
 
     #[test]
@@ -101,6 +103,7 @@ mod tests {
         );
     }
 
+    #[cfg(nightly)]
     #[bench]
     fn bench_solution1(b: &mut Bencher) {
         b.iter(|| {
@@ -120,6 +123,7 @@ mod tests {
         );
     }
 
+    #[cfg(nightly)]
     #[bench]
     fn bench_solution2(b: &mut Bencher) {
         b.iter(|| {
