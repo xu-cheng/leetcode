@@ -15,6 +15,6 @@ mod tests {
         assert!(Solution::is_power_of_two(1));
         assert!(Solution::is_power_of_two(16));
         assert!(!Solution::is_power_of_two(218));
-        assert!(!Solution::is_power_of_two(-2147483648));
+        assert!(!Solution::is_power_of_two(-2_147_483_648));
     }
 }
