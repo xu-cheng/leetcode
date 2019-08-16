@@ -28,6 +28,7 @@ pub mod _146; // LRU Cache
 pub mod _171; // Excel Sheet Column Number
 pub mod _208; // Implement Trie (Prefix Tree)
 pub mod _225; // Implement Stack using Queues
+pub mod _231; // Power of Two
 pub mod _232; // Implement Queue using Stacks
 pub mod _260; // Single Number III
 pub mod _347; // Top K Frequent Elements
