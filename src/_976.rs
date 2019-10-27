@@ -29,5 +29,4 @@ mod tests {
         assert_eq!(Solution::largest_perimeter(vec![3, 2, 3, 4]), 10);
         assert_eq!(Solution::largest_perimeter(vec![3, 6, 2, 3]), 8);
     }
-
 }
