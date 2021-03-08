@@ -1,6 +1,5 @@
 use std::collections::BinaryHeap;
 use std::collections::HashMap;
-use std::iter::FromIterator;
 
 pub struct Solution;
 
@@ -10,8 +9,8 @@ impl Solution {
         for n in &nums {
             *freqs.entry(*n).or_insert(0) += 1;
         }
-        let mut heap =
-            BinaryHeap::from_iter(freqs.iter().map(|(n, freq)| (*freq, *n)));
+        let mut heap: BinaryHeap<(usize, i32)> =
+            freqs.iter().map(|(n, freq)| (*freq, *n)).collect();
         let mut ans: Vec<i32> = Vec::with_capacity(k as usize);
         for _ in 0..k {
             ans.push(heap.pop().unwrap().1);

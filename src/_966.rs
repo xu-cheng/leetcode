@@ -1,6 +1,5 @@
 use std::collections::HashMap;
 use std::collections::HashSet;
-use std::iter::FromIterator;
 
 pub struct Solution;
 
@@ -9,8 +8,7 @@ impl Solution {
         wordlist: Vec<String>,
         queries: Vec<String>,
     ) -> Vec<String> {
-        let words: HashSet<String> =
-            HashSet::from_iter(wordlist.iter().cloned());
+        let words: HashSet<String> = wordlist.iter().cloned().collect();
         let mut cap: HashMap<String, String> =
             HashMap::with_capacity(wordlist.len());
         let mut vow: HashMap<String, String> =

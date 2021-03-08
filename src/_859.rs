@@ -20,8 +20,7 @@ impl Solution {
         if in_a_not_b.is_empty() {
             char_counts.values().any(|&v| v >= 2)
         } else {
-            in_a_not_b == in_b_not_a
-                && in_a_not_b.values().cloned().sum::<usize>() == 2
+            in_a_not_b == in_b_not_a && in_a_not_b.values().sum::<usize>() == 2
         }
     }
 }

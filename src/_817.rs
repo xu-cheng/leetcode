@@ -1,5 +1,4 @@
 use std::collections::HashSet;
-use std::iter::FromIterator;
 
 #[derive(PartialEq, Eq, Debug)]
 pub struct ListNode {
@@ -19,7 +18,7 @@ pub struct Solution;
 
 impl Solution {
     pub fn num_components(head: Option<Box<ListNode>>, g: Vec<i32>) -> i32 {
-        let g_set: HashSet<i32> = HashSet::from_iter(g.iter().cloned());
+        let g_set: HashSet<i32> = g.iter().copied().collect();
         let mut node = head.as_ref();
         let mut inside_components = false;
         let mut ans = 0;

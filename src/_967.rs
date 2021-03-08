@@ -20,7 +20,7 @@ impl Solution {
             }
             ans = tmp;
         }
-        ans.sort();
+        ans.sort_unstable();
         ans.dedup();
         ans
     }

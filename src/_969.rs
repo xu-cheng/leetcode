@@ -23,7 +23,7 @@ impl Solution {
                         .skip(maxi + 1)
                         .rev()
                         .chain(a.iter().take(maxi))
-                        .cloned()
+                        .copied()
                         .collect();
                 }
             }

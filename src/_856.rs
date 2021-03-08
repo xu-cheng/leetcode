@@ -1,6 +1,6 @@
 pub struct Solution;
 
-#[derive(Debug, PartialEq, Eq, Clone)]
+#[derive(Debug, PartialEq, Eq, Copy, Clone)]
 enum State {
     LeftP,
     RightP,
@@ -17,7 +17,7 @@ impl Solution {
                 _ => unreachable!(),
             }
         }
-        stack.last().cloned().map_or(0, |x| match x {
+        stack.last().copied().map_or(0, |x| match x {
             State::Score(value) => value,
             _ => unreachable!(),
         })
@@ -26,7 +26,7 @@ impl Solution {
     fn add_to_stack(stack: &mut Vec<State>, state: State) {
         match state {
             State::LeftP => stack.push(State::LeftP),
-            State::RightP => match stack.last().cloned().unwrap() {
+            State::RightP => match stack.last().copied().unwrap() {
                 State::LeftP => {
                     stack.pop();
                     Self::add_to_stack(stack, State::Score(1));
@@ -39,7 +39,7 @@ impl Solution {
                 }
                 State::RightP => unreachable!(),
             },
-            State::Score(value) => match stack.last().cloned() {
+            State::Score(value) => match stack.last().copied() {
                 Some(x) => match x {
                     State::LeftP => stack.push(State::Score(value)),
                     State::Score(value2) => {
